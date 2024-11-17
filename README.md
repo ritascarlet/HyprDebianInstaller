@@ -17,4 +17,4 @@ sudo ./HyprDebian.sh
 
 By the way, run only from root
 
-
+If you want to contribute your idea for the script, then say so, don't be shy. Love and hugs to all<3
