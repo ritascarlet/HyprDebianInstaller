@@ -15,6 +15,6 @@ chmod +x HyprDebian.sh
 
 sudo ./HyprDebian.sh
 
-
+By the way, run only from root
 
 
