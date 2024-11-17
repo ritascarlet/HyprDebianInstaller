@@ -12,7 +12,7 @@ It is recommended to set it to CLEAN debian sid And yes, debian sid more stable,
 
 Okay, I wrote a lot. Let's get started with the installation.
 
-wget https://github.com/ritascarlet/HyprDebian/blob/main/HyprDebian.sh
+git clone https://github.com/ritascarlet/HyprDebian.git
 
 chmod +x HyprDebian.sh
 
