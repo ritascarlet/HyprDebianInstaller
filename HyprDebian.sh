@@ -56,7 +56,7 @@ echo ""
 echo ""
 echo ""   
 
-apt --no-install-recommends install sddm
+apt --no-install-recommends install sddm -y
 
 mkdir HyprDebian
 
@@ -318,7 +318,7 @@ echo ""
 echo ""
 echo ""
 
-apt install kitty wofi hyprpaper
+apt-get install kitty wofi hyprpaper -y
 
 
 echo ""
