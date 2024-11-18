@@ -1,4 +1,4 @@
-sudo apt install linux-headers-$(uname -r) build-essential dkms curl wget
+sudo apt install linux-headers-$(uname -r) build-essential curl wget
 
 cd
 
