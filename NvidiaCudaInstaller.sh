@@ -1,7 +1,6 @@
-sudo apt install linux-headers-$(uname -r) build-essential dkms curl
+sudo apt install linux-headers-$(uname -r) build-essential dkms curl wget
 
-curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/3bf863cc.pub | sudo gpg --dearmor -o /usr/share/keyrings/cuda-archive-keyring.gpg
+wget https://developer.download.nvidia.com/compute/nvidia-driver/560.35.03/local_installers/nvidia-driver-local-repo-debian12-560.35.03_1.0-1_amd64.deb
 
-echo "deb [signed-by=/usr/share/keyrings/cuda-archive-keyring.gpg] http://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/ /" | sudo tee /etc/apt/sources.list.d/cuda.list
+sudo dpkg -i nvidia-driver-local-repo-debian12-560.35.03_1.0-1_amd64.deb
 
-sudo apt update  
