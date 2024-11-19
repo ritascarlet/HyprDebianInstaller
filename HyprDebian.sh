@@ -103,6 +103,10 @@ echo ""
 
 wget https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.1/downloads/wayland-1.23.1.tar.xz
 
+tar -xvJf wayland-1.23.1.tar.xz
+
+cd wayland-1.23.1
+
 mkdir build &&
 cd    build &&
 
