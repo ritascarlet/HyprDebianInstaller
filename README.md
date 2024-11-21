@@ -12,7 +12,9 @@ It is recommended to set it to CLEAN debian sid And yes, debian sid more stable,
 
 Okay, I wrote a lot. Let's get started with the installation.
 
-git clone https://github.com/ritascarlet/HyprDebian.git
+git clone https://github.com/ritascarlet/HyprDebianInstaller.git
+
+cd HyprDebianInstaller
 
 chmod +x HyprDebian.sh
 
@@ -21,3 +23,6 @@ sudo ./HyprDebian.sh
 By the way, run only from root
 
 If you want to contribute your idea for the script, then say so, don't be shy. Love and hugs to all<3
+
+
+I also compiled a small script for installing the best version of Nvidia drivers<3
