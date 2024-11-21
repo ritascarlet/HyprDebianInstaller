@@ -8,6 +8,6 @@ sudo dpkg -i nvidia-driver-local-repo-debian12-560.35.03_1.0-1_amd64.deb
 
 sudo cp /var/nvidia-driver-local-repo-debian12-560.35.03/nvidia-driver-local-8192D793-keyring.gpg /usr/share/keyrings/
 
-apt update
+sudo apt update
 
 sudo apt-get install -y nvidia-open-560
