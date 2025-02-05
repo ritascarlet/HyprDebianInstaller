@@ -75,7 +75,7 @@ echo ""
 echo ""
 echo ""  
 
-git clone git://linuxtv.org/edid-decode.git
+git clone --depth 1 git://linuxtv.org/edid-decode.git
 
 cd edid-decode
 
@@ -101,11 +101,9 @@ echo ""
 echo ""
 echo ""
 
-wget https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.1/downloads/wayland-1.23.1.tar.xz
+git clone --depth 1 https://gitlab.freedesktop.org/wayland/wayland.git
 
-tar -xvJf wayland-1.23.1.tar.xz
-
-cd wayland-1.23.1
+cd wayland
 
 mkdir build &&
 cd    build &&
@@ -133,11 +131,10 @@ echo ""
 echo ""
 echo ""
 
-wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.38/downloads/wayland-protocols-1.38.tar.xz
+git clone --depth 1 https://gitlab.freedesktop.org/wayland/wayland-protocols.git
 
-tar -xvJf wayland-protocols-1.38.tar.xz
 
-cd wayland-protocols-1.38
+cd wayland-protocols
 
 mkdir build &&
 cd    build &&
@@ -163,11 +160,10 @@ echo ""
 echo ""
 echo ""
 
-wget https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.2.0/downloads/libdisplay-info-0.2.0.tar.xz
+git clone --depth 1 https://gitlab.freedesktop.org/emersion/libdisplay-info.git
 
-tar -xvJf libdisplay-info-0.2.0.tar.xz
 
-cd libdisplay-info-0.2.0
+cd libdisplay-info
 
 meson setup build/
 
@@ -177,33 +173,7 @@ ninja -C build/ install
 
 cd ..
 
-echo ""
-echo ""   
-echo ""
-echo ""   
-echo ""
-echo "-----------------------------------"
-echo -e "\e[32mInstall Wlroots\e[0m"
-echo "-----------------------------------"
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
 
-wget https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.18.1/downloads/wlroots-0.18.1.tar.gz
-
-tar -xvf wlroots-0.18.1.tar.gz
-
-cd wlroots-0.18.1
-
-meson setup build/
-
-ninja -C build/
-
-sudo ninja -C build/ install
-
-cd ..
 
 echo ""
 echo ""   
@@ -219,7 +189,7 @@ echo ""
 echo ""
 echo ""
 
-git clone https://github.com/hyprwm/hyprwayland-scanner.git
+git clone --depth 1 https://github.com/hyprwm/hyprwayland-scanner.git
 
 cd hyprwayland-scanner
 
@@ -245,7 +215,7 @@ echo ""
 echo ""
 echo ""
 
-git clone https://github.com/hyprwm/hyprutils.git
+git clone --depth 1 https://github.com/hyprwm/hyprutils.git
 
 cd hyprutils
 
@@ -271,7 +241,7 @@ echo ""
 echo ""
 echo ""
 
-git clone https://github.com/hyprwm/hyprlang.git
+git clone --depth 1 https://github.com/hyprwm/hyprlang.git
 
 cd hyprlang
 
@@ -297,7 +267,7 @@ echo ""
 echo ""
 echo ""
 
-git clone https://github.com/hyprwm/hyprcursor.git
+git clone --depth 1 https://github.com/hyprwm/hyprcursor.git
 
 cd hyprcursor
 
@@ -323,7 +293,7 @@ echo ""
 echo ""
 echo ""
 
-git clone https://github.com/hyprwm/aquamarine.git
+git clone --depth 1 https://github.com/hyprwm/aquamarine.git
 
 cd aquamarine
 
@@ -349,11 +319,9 @@ echo ""
 echo ""
 echo ""
 
-wget https://github.com/hyprwm/Hyprland/releases/download/v0.45.1/source-v0.45.1.tar.gz
+git clone --depth 1 https://github.com/hyprwm/Hyprland.git
 
-tar -xvf source-v0.45.1.tar.gz
-
-cd hyprland-source 
+cd Hyprland
 
 make all  
 
