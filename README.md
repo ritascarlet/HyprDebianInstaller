@@ -6,7 +6,7 @@ I love you very much Debian and works Vaxerski, so I decided to write a simple s
 
 And will install sddm without kde, kitty, wofi and hyprpaper for easy start
 
-The script always collects the latest versions of dependencies and the most Hyprland, which in theory could cause failures during a global update of any of the components.
+The script always tries to collect the latest and most stable releases, so don't worry about incompatibility 
 
 It is recommended to set it to CLEAN debian sid And yes, debian sid more stable, more comfortable and safer than the same testing
 
